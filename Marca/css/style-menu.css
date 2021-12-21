@@ -1,37 +1,72 @@
-#menu-bar{
-    display: none;
-}
+/* estilo MENU */
 
-header label{
-    float: right;
-    font-size: 28px;
-    margin: 6px 0;
-    cursor:pointer;
+.logo, .icon-menu{
+    
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 27px;
+
+    color: black;
+    margin-top: -77px;
+    opacity: 0.9;
+    margin-left: auto;
+    cursor: pointer;
+}
+.nav{
+    position: absolute;
+    top: 40px;
+    left:-100%;
+    width: 100%;
+    transition: all 0.3s;
 }
 
 .menu{
-    position: absolute;
-    top: 50px;;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(5, 35, 41, 0.5);
-    transition: all 0.3s;
-    transform: translateX(-100%);
+    list-style: none;
+    padding: 0;
+    margin: 0;  
 }
 
-.menu a{
+.menu-link{
     display: block;
-    color: white;
-    height: 50px;
     padding: 13px;
-    border-bottom: 2px solid rgba(5, 35, 41, 0.3);
+    background:#608B43;
+    opacity: 0.85;
+    color: black;
+}
+.menu-link:hover, .select{
+    background: white;
+    color:#608B43;
 }
 
-.menu a:hover{
-    background:  rgba(15, 83, 69, 0.3);;
+.mostrar{
+    left: 0;
 }
 
-#menu-bar:checked ~ .menu{
-    transform: translateX(0%);
+@media (min-width:1024px)
+{
+
+    .nav{
+        position: static;
+        margin-top: 20px;
+    }
+    .menu{
+        display: flex;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu-link{
+        background: none;
+        font-size: 20px;
+        padding: 15px;
+    }
+    .select{
+        
+    }
 }
+

@@ -1,0 +1,52 @@
+/*---------------- descripcion----------------*/
+
+.general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+
+    
+}
+.general .description{
+    
+    opacity: 0.95;
+    align-items: center;
+    display: flex;
+    
+    justify-content: center;
+   
+ 
+}
+
+.general .description p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 15px;
+}
+
+.general .img-general{
+   
+    align-items: center;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+}
+.general .img-general img{
+    height: auto;
+    width: 290px;
+    margin: 10px;
+    clip-path: inset(0 10% 0 10%);
+    opacity: 0.8;
+
+}
+/* se cambia despues*/
+
+.nota p{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: #608B43;
+
+    
+}
